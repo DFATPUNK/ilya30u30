@@ -1,4 +1,3 @@
-
 # 🧠 Ilya30u30 – Étude approfondie de 30 papers fondamentaux en Intelligence Artificielle
 
 ## 📚 Origine du projet
@@ -42,12 +41,67 @@ Chaque paper fait l’objet d’une **étude complète**, structurée selon le p
 │
 ├── studies/                  # 📂 Études réalisées (1 dossier par paper)
 │   ├── 19930801 - Keeping Neural Networks Simple by Minimizing the Description Length of the Weights/
-│   │   ├── paper.pdf         # Paper original
-│   │   └── study.md          # Étude complète du paper
+│   │   ├── paper.pdf         # 📄 Paper original
+│   │   └── study.md          # 📝 Étude complète du paper
 │   └── ...
 │
-└── README.md                 # Ce fichier
+├── audiobooks/               # 🎧 Audiobooks générés automatiquement à partir des études (créé par le script)
+│   ├── 19930801 - Keeping Neural Networks Simple by Minimizing the Description Length of the Weights/
+│   │   └── study.mp3         # 🔊 Audio correspondant à l'étude
+│   └── ...
+│
+├── venv/                     # 🐍 Environnement virtuel Python local (non suivi par Git)
+│
+├── .gitignore                # 📜 Ignore venv/ et audiobooks/ pour garder le repo léger
+├── .python-version           # 📜 Force Python 3.10.13 avec pyenv
+├── setup.sh                  # ⚙️ Script d'installation automatique pour tout mettre en place
+├── generate_audiobooks.py    # 🧠 Script principal pour générer tous les fichiers audio
+├── README.md                 # 📚 Ce fichier
+└── README_Audio.md           # 🎧 Guide spécifique pour générer et écouter les audiobooks
 ```
+
+---
+
+## 🎧 Générer et écouter les études en Audiobooks
+
+Vous pouvez désormais générer et écouter la version audio de chaque étude réalisée !
+
+👉 [Voir les instructions détaillées pour la génération d'audiobooks](./README_Audio.md)
+
+### ⚡ Démarrage rapide pour générer tous les audiobooks
+
+1. **Cloner ce repository** :
+
+```
+git clone https://github.com/DFATPUNK/ilya30u30.git
+cd ilya30u30
+```
+
+2. **Lancer le script d'installation** :
+
+```
+bash setup.sh
+```
+
+3. **Activer l'environnement virtuel** :
+
+```
+source venv/bin/activate
+```
+
+4. **Générer les audiobooks** :
+
+```
+python generate_audiobooks.py
+```
+
+✅ Ce script automatique :
+- Installe la bonne version de Python (3.10.13) si nécessaire
+- Crée et active un environnement virtuel isolé
+- Installe toutes les dépendances nécessaires
+- Génère un fichier `.mp3` pour chaque étude dans le dossier `audiobooks/`
+
+🎧 Vous pourrez alors écouter les analyses d'articles de recherche où et quand vous voulez !
 
 ---
 
